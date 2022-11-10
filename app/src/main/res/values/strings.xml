@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TODO</string>
+    <string name="main_title">Your Task List</string>
+    <string name="date_hint">mm/dd/yyyy</string>
+    <string name="task_hint">Task to do</string>
+    <string name="mark_all">Mark all as complete</string>
+    <string name="delete_btn">Clear %1s completed item</string>
+    <string name="items_left">%1s items left</string>
+    <string name="select_date">Select Date</string>
+</resources>

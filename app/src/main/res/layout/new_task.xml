@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btn_post"
+        style="@style/Widget.MaterialComponents.TimePicker.ImageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_round_post_add"
+        android:tint="?attr/colorSecondaryVariant"
+        app:iconGravity="start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_date"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="@string/date_hint"
+        app:layout_constraintBottom_toBottomOf="@id/btn_post"
+        app:layout_constraintEnd_toStartOf="@id/btn_post"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_post"
+        app:strokeColor="?attr/colorSecondaryVariant"
+        app:strokeWidth="1dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_new_task"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/task_hint"
+        android:textColorHint="?attr/colorPrimaryVariant"
+        app:hintEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@id/btn_post"
+        app:layout_constraintEnd_toStartOf="@id/btn_date"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_post">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_new_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Demo project"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
